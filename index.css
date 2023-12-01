@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #4a4a4c;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color 0.5s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #faf7f7;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgba(45, 36, 36, 0.906); /* Change the color on hover */
+}
+
+section {
+    height: 1000px; /* Add some content to make scrolling visible */
+    padding: 20px;
+    margin-top: 60px; /* Adjust margin to account for fixed header */
+    background-color: hsl(0, 0%, 95%); /* Set background color for sections */
+}
+
+/* Customize the background of the header on scroll */
+header.scrolled {
+    background-color: #d13939;
+}
+
+/* Add some styling to the content within the sections */
+section h1 {
+    color: #2643d4;
+}
+
+section p {
+    color: #385fe1;
+}
